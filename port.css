@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+/* Modernized Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(15, 2, 2, 0.95); /* Slight transparency for modern effect */
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.h1 {
+    position: relative;
+    right: 450px;
+    font-size: 30px;
+    color: rgb(36, 33, 33);
+    font-weight: bold;
+    padding: auto;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(235, 235, 255);
+    justify-content: start;
+    gap: 20px;
+    font-size: 20px;
+    right: 70rem;
+}

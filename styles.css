@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+.img-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+} 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+.projects a {
+    display: flex;
+    color: lightblue;
+    text-decoration: none;
+    margin-top: 5px;
+}
