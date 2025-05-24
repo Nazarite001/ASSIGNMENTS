@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JavaScript Operations</title>
+</head>
+<body>
+  <h2>Basic JavaScript Operations</h2>
+  <button onclick="addTwoNumbers()">Add Two Numbers</button>
+  <button onclick="checkEvenOdd()">Check Even or Odd</button>
+  <button onclick="findLargest()">Find Largest of Three Numbers</button>
+  <button onclick="simpleCalculator()">Simple Calculator</button>
+  <button onclick="swapVariables()">Swap Two Variables</button>
+  <button onclick="reverseString()">Reverse a String</button>
+
+  <script>
+    // 1. Add Two Numbers
+    function addTwoNumbers() {
+      let num1 = parseFloat(prompt("Enter the first number:"));
+      let num2 = parseFloat(prompt("Enter the second number:"));
+      let sum = num1 + num2;
+      alert("The sum is: " + sum);
+    }
+
+    // 2. Check Even or Odd
+    function checkEvenOdd() {
+      let number = parseInt(prompt("Enter a number:"));
+      if (number % 2 === 0) {
+        alert(number + " is even.");
+      } else {
+        alert(number + " is odd.");
+      }
+    }
+
+    // 3. Find the Largest of Three Numbers
+    function findLargest() {
+      let a = parseFloat(prompt("Enter first number:"));
+      let b = parseFloat(prompt("Enter second number:"));
+      let c = parseFloat(prompt("Enter third number:"));
+
+      let largest;
+      if (a >= b && a >= c) {
+        largest = a;
+      } else if (b >= a && b >= c) {
+        largest = b;
+      } else {
+        largest = c;
+      }
+
+      alert("The largest number is: " + largest);
+    }
+
+    // 4. Simple Calculator
+    function simpleCalculator() {
+      let num1 = parseFloat(prompt("Enter first number:"));
+      let operator = prompt("Enter operator (+, -, *, /):");
+      let num2 = parseFloat(prompt("Enter second number:"));
+      let result;
+
+      switch (operator) {
+        case "+":
+          result = num1 + num2;
+          break;
+        case "-":
+          result = num1 - num2;
+          break;
+        case "*":
+          result = num1 * num2;
+          break;
+        case "/":
+          result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+          break;
+        default:
+          result = "Invalid operator";
+      }
+
+      alert("Result: " + result);
+    }
+
+    // 5. Swap Two Variables (without a third variable)
+    function swapVariables() {
+      let x = parseFloat(prompt("Enter value of x:"));
+      let y = parseFloat(prompt("Enter value of y:"));
+
+      x = x + y;
+      y = x - y;
+      x = x - y;
+
+      alert("After swapping:\nx = " + x + "\ny = " + y);
+    }
+function reverseString() {
+  let str = prompt("Enter a string:");
+  let reversed = str.split("").reverse().join("");
+  alert("Reversed string: " + reversed);
+}
+
+
+  </script>
+</body>
+</html>
